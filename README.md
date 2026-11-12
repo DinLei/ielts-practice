@@ -25,3 +25,18 @@
 - `06_复习清单与自测.md`
 - `07_拓展练习.md`
 - `08_背诵范文/` 背诵范文 + Python 生成的彩色配图（img/）与脚本（scripts/）
+- `09_练习导入.md` 推到 One Minute Fly（eng_train）里练的中英对照句子：范文、汉译英、句型转换、例句；每课整理完必生成
+
+## 推到手机上练（One Minute Fly）
+
+课件整理好后，把 `09_练习导入.md` 推进 `~/Code/eng_train`（手机上的练习应用）。文件格式：开头 `collection:` 写课次；每个 `# 标题` 一份文档，标题「：」前面是类型（背诵范文 / 汉译英 / 句型转换 / 例句）；`##` 是小节；英文一行一句，下一行紧跟中文，中文就是默写时的题目。
+
+```sh
+# 第一次：记住服务地址和导入密钥（密钥在 App 的「设置 → 从其他 App 发送文章」）
+python3 ~/Code/eng_train/scripts/push.py --url https://<家里的Mac>.ts.net --key <导入密钥> --save
+# 之后每课
+python3 ~/Code/eng_train/scripts/push.py --dry-run 第01课_Writing_Task1_图表趋势描述/09_练习导入.md   # 先看
+python3 ~/Code/eng_train/scripts/push.py 第01课_Writing_Task1_图表趋势描述/09_练习导入.md             # 再推
+```
+
+推进去之后在手机上：「文章 → 推荐 → 课件」看到按课次分组的文档；练习首页「换方向」把「课件」放第一位（或「只练课件」），每天的新句就从课件里取，一份练完自动换下一份；也可以在课件页对某一份点「练这篇」单独练。同一个文件再推一次不会重复导入。
