@@ -32,11 +32,9 @@
 课件整理好后，把 `09_练习导入.md` 推进 `~/Code/eng_train`（手机上的练习应用）。文件格式：开头 `collection:` 写课次；每个 `# 标题` 一份文档，标题「：」前面是类型（背诵范文 / 汉译英 / 句型转换 / 例句）；`##` 是小节；英文一行一句，下一行紧跟中文，中文就是默写时的题目。
 
 ```sh
-# 第一次：记住服务地址和导入密钥（密钥在 App 的「设置 → 从其他 App 发送文章」）
-python3 ~/Code/eng_train/scripts/push.py --url https://<家里的Mac>.ts.net --key <导入密钥> --save
-# 之后每课
-python3 ~/Code/eng_train/scripts/push.py --dry-run 第01课_Writing_Task1_图表趋势描述/09_练习导入.md   # 先看
-python3 ~/Code/eng_train/scripts/push.py 第01课_Writing_Task1_图表趋势描述/09_练习导入.md             # 再推
+python3 ~/Code/eng_train/scripts/push.py 第01课_Writing_Task1_图表趋势描述/09_练习导入.md
 ```
+
+第一次运行会问三样：手机上打开的地址（https://….ts.net）、用户名（回车就是 admin）、密码。脚本登录一次拿到导入密钥，记在 `~/.config/engtrain/push.json`，密码不保存，以后直接推。加 `--dry-run` 只看不发，`--setup` 重新设置。
 
 推进去之后在手机上：「文章 → 推荐 → 课件」看到按课次分组的文档；练习首页「换方向」把「课件」放第一位（或「只练课件」），每天的新句就从课件里取，一份练完自动换下一份；也可以在课件页对某一份点「练这篇」单独练。同一个文件再推一次不会重复导入。
