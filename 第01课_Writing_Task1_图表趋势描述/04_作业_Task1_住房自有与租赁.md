@@ -100,11 +100,21 @@
 
 - 开始时间：
 - 结束时间：
-- 字数：
+- 字数：170
 
 ---
 
 （在下面写）
+
+**第一稿（2026-11-22 提交，原文保留，批改见 [04b_作业批改.md](04b_作业批改.md)）**
+
+The bar chart gives information about the changes in proportion of households who owned or rented homes in England and Wales from 1918 to 2011.
+
+Overall, there was a steady shift of poluation from renting accommodation to buying their own house. People renting houses made up the vast majority at the start of the period, but they had been outnumbered by households owning accommodation by the end, with the turning point coming in 1970s.
+
+In 1918, only almost 22% of people owned their own houses, compared with 78% renting houses. Over the following 100 years, the share of renting houses fell steadily to nearly 36% in 2011 while the proportion of owning houses increased by roughly 40% to 62%.
+
+The two figures crossed in 1971, both of them accounted 50% and in the next 4 decades the proportion of households owning accommodation reached a peak in 2001 at nearly 70%, then it fell slightly to roughly 62% in 2011, but still twice as many as the proportion of renting houses.
 
 
 
